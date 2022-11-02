@@ -10,7 +10,6 @@
 public class Ejercicio7 {
     public static void main(String[] args) {
         int fila = 15;
-        String quiniela = "";
         int numeroquiniela = 0;
         int columna = 3;
 
