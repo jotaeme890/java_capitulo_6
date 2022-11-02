@@ -20,7 +20,7 @@ public class Ejercicio14 {
         int i = 0;
 
         do {
-            numero = (int)(Math.random()*101);
+            numero = (int)(Math.random()*101);  
             System.out.println("El ordenador, ha pensado en el número: " + numero);
             if(numero == n){
                 salir = false;
