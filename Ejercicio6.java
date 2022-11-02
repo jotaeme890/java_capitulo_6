@@ -39,6 +39,6 @@ public class Ejercicio6 {
         if(i==5){
             System.out.println("No has averiguado la contraseña");
         }
-        
+        sc.close();
     }
 }
