@@ -15,10 +15,8 @@ public class Ejercicio13 {
 
         do {
             tirada1 = (int)(Math.random()*6+1);
-            System.out.println("El dado 1 ha tirado: " + tirada1);
             tirada2 = (int)(Math.random()*6+1);
-            System.out.println("El dado 2 ha tirado: " + tirada2);
-            
+            System.out.println("Dado 1: " + tirada1 + "   |   Dado 2: " + tirada2);
         } while (tirada1 != tirada2);
     }
 }
