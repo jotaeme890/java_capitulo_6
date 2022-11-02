@@ -1,5 +1,3 @@
-import javax.sound.midi.Soundbank;
-
 /**
  * 10 Realiza un programa que pinte por pantalla diez líneas formadas por caracteres.
  * El carácter con el que se pinta cada línea se elige de forma aleatoria entre uno
@@ -16,7 +14,6 @@ public class Ejercicio10 {
         int longitud = 0;
         int caracteres;
         
-
         for ( int i = 1 ; i <= 10; i++){
             longitud = (int)(Math.random()*41);
             caracteres = (int)(Math.random()*6+1);
@@ -41,7 +38,6 @@ public class Ejercicio10 {
                     System.out.print("@");
                     break;
                 }
-                
             }
             System.out.println();
         }
