@@ -9,7 +9,7 @@
 
 
 public class Ejercicio12 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
         for(int i = 1; i <= 9999 ; i++) {
             System.out.print((char)(Math.random() * 95 + 32));
         }
