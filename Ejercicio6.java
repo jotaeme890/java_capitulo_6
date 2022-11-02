@@ -15,7 +15,7 @@ public class Ejercicio6 {
         boolean salir = true;
         int i = 0;
         int contraseña = 0;
-        contraseña = (int)(Math.random()*100);
+        contraseña = (int)(Math.random()*101);
         int numero;
 
         do {
