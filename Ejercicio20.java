@@ -21,7 +21,7 @@ public class Ejercicio20 {
         for(int i = 1; i<=altura ; i++){
                 System.out.print("*");
 
-                if(posicion >= agua){
+                if(posicion >= agua){ //ya que empieza en cuando sea el primer nivel de agua, y para hacer lo inferior hay que hacerlo mientras sea mayor ya que la linea desciendda, aumenta el nivel
                     System.out.print("~~~~~~~~~");
                 } else {
                     System.out.print("         ");
