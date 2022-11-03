@@ -23,7 +23,6 @@ public class Ejercicio17 {
 
         int pez = (int)(Math.random()*(altura-2)*(ancho-2));
         int posicion = 0;
-        //int pez = (int)(Math.random()*ancho-1+1);
         
         for(int alt = 1 ; alt <= altura-1 ; alt++){//alto de la pecera
             for(int anch = 1; anch <= ancho ; anch++){ //anacho de la pecera con los espacios interiores
