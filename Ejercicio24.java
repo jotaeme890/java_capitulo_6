@@ -29,5 +29,6 @@ public class Ejercicio24 {
                 aux/=10;
             }
         }
+        sc.close();
     }
 }
