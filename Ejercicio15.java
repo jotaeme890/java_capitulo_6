@@ -51,7 +51,7 @@ public class Ejercicio15 {
                 primera = nota;
             }
 
-            if (contador == melodias){
+            if (contador == melodias){ //así ponemos la primera nota igual con la última
                 nota = primera;
             }
 
