@@ -12,7 +12,7 @@
 public class Ejercicio19 {
     public static void main(String[] args) {
         int max = 0;
-        int min = 213;
+        int min = 201;
         int suma = 0;
 
         for(int i = 1; i <=50 ; i++){
