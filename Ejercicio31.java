@@ -54,10 +54,9 @@ public class Ejercicio31 {
                     System.out.println("Lo siento has perdido");
                     salir = true;
                 }  else {
-                    System.out.println("Continúe jugando.");
-                    System.out.println("Pulse INTRO para tirar los dados.");
-                    sc.nextLine();
-                    }
+                    System.out.println("Continua en el juego");
+                }
+
             } while (!salir);
         }
         sc.close();
