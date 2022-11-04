@@ -26,10 +26,10 @@ public class Ejercicio7 {
                         System.out.print(" 1 |");
                     break;
                     case 2:
-                    System.out.print(" x |");
+                        System.out.print(" x |");
                     break;
                     case 3:
-                    System.out.print(" 2 |");
+                        System.out.print(" 2 |");
                     break;
                 }
             }
