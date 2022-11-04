@@ -21,7 +21,7 @@ public class Ejercicio30 {
         int ancho = sc.nextInt();
 
         int pez = 0;
-        int posicion1 = 0;
+        int posicion = 0;
         int caballito = 0;
         int caracola = 0;
 
@@ -32,23 +32,21 @@ public class Ejercicio30 {
 
         } while (pez == caballito && pez==caracola && caballito == caracola);
 
-        for(int alt = 1 ; alt <= altura-1 ; alt++){//alto de la pecera
-            for(int anch = 1; anch <= ancho-1 ; anch++){ //ancho de la pecera con los espacios interiores
+        for(int alt = 1 ; alt < altura ; alt++){//alto de la pecera
+            for(int anch = 1; anch < ancho ; anch++){ //ancho de la pecera con los espacios interiores
                 if(anch == 1){ //primera X
                     System.out.print("X");
                 }
-                if(pez == posicion1){ //si la posicion es igual a la cuenta del random, se imprime el pececito, en este caso al empezar en 0, se va a incrementar hasta que sea el mismo valor para imrpimir o los espacios o el pececito (tiene que hacer alguna de ellas)
+                if(pez == posicion){ //si la posicion es igual a la cuenta del random, se imprime el pececito, en este caso al empezar en 0, se va a incrementar hasta que sea el mismo valor para imrpimir o los espacios o el pececito (tiene que hacer alguna de ellas)
                     System.out.print("~");
-                } else if (caballito == posicion1){
+                } else if (caballito == posicion){
                         System.out.print("$");
-                    } else if(caracola == posicion1){
+                    } else if(caracola == posicion){
                             System.out.print("@");
                         } else{
                             System.out.print(" ");
                         }
-
-                posicion1++;
-
+                posicion++;
             }
             System.out.print("X");
             System.out.println("");
