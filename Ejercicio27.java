@@ -35,7 +35,6 @@ public class Ejercicio27 {
             System.out.println("Dime bien los valores");
         }
 
-
         int numeroelegido = (int)(Math.random()*3+1);
         int n2 = 0;
         switch (numeroelegido) {
@@ -49,7 +48,6 @@ public class Ejercicio27 {
                 n2=3;
             break;
         }
-
         //ganar
         if(n==1 && n2 ==3){ 
             System.out.println("Enhorabuena, has ganado");
@@ -58,12 +56,10 @@ public class Ejercicio27 {
         } else if(n==3 && n2==2){
             System.out.println("Enhorabuena, has ganado");
         }
-        
         //empate
         if(n==n2){
             System.out.println("Has empatado");
         }
-
         //perder
         if(n==3 && n2 ==1){ 
             System.out.println("Has perdido");
@@ -72,7 +68,6 @@ public class Ejercicio27 {
         } else if(n==2 && n2==3){
             System.out.println("Enhorabuena, has ganado");
         }
-
         sc.close();
     }
 }
