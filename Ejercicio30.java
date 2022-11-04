@@ -25,7 +25,6 @@ public class Ejercicio30 {
         int caballito = 0;
         int caracola = 0;
 
-
         do {
             pez = (int)(Math.random()*(ancho-2)*(altura-2));
             caballito = (int)(Math.random()*(ancho-2)*(altura-2));
