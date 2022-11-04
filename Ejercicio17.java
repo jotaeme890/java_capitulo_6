@@ -21,7 +21,7 @@ public class Ejercicio17 {
         System.out.print("Dime el ancho de la pecera (mínimo 4): ");
         int ancho = sc.nextInt();
 
-        int pez = (int)(Math.random()*(altura-2)*(ancho-2));
+        int pez = (int)(Math.random()*(altura-1)*(ancho-3));
         int posicion = 0;
         
         for(int alt = 1 ; alt <= altura-1 ; alt++){//alto de la pecera
