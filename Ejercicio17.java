@@ -25,7 +25,7 @@ public class Ejercicio17 {
         int posicion = 0;
         
         for(int alt = 1 ; alt <= altura-1 ; alt++){//alto de la pecera
-            for(int anch = 1; anch <= ancho ; anch++){ //anacho de la pecera con los espacios interiores
+            for(int anch = 1; anch <= ancho ; anch++){ //ancho de la pecera con los espacios interiores
                 if(anch == 1){ //primera X
                     System.out.print("X ");
                 } else if (anch==ancho){ //ultima X
