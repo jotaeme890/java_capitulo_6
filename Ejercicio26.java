@@ -81,8 +81,6 @@ public class Ejercicio26 {
                 }
             break;
         }
-
-        
         sc.close();
     }
 }
