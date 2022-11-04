@@ -12,19 +12,32 @@
 public class Ejercicio25 {
     public static void main(String[] args) {
         int cont = 0;
+        boolean primo = true;
 
         do {
             int numnum = (int)(Math.random()*191+10);
-            cont++;
-            if(numnum%2==0){
-                System.out.print(numnum + " ");
-            } else if(numnum%3==0){
-                System.out.print(numnum + " ");
-            } else if (numnum%5==0){
-                System.out.print(numnum + " ");
+            primo = true;
+
+            if (numnum%2==0){
+                primo = false;
             }
-            else 
-                System.out.print("#" + numnum + "# ");
+
+            for(int i = 2 ; i<=numnum/2 ; i++){
+                if(numnum%i==0){
+                    primo = false;
+                }
+            }
+
+            if(primo){
+                System.out.print( "#"+numnum+"# ");
+            } else{
+                System.out.print(numnum+" ");
+            }
+
+            if(numnum%5==0){
+                System.out.print( "["+numnum+"] ");
+            }
+            cont++;
         } while (cont<=100);
     }
 }
