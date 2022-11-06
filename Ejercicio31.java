@@ -37,9 +37,9 @@ public class Ejercicio31 {
         } else if (suma ==2 || suma==3 || suma==12){
             System.out.println("Lo siento has perdido");
         } else {
+            System.out.println("Has entrado en la segunda etapa del juego, vamos a tirar de nuevo los dados, tiene que obtener la suma de " + suma + ", recuerde si saca un 7 pierde");
             do {
                 salir=false;
-                System.out.println("Has entrado en la segunda etapa del juego, vamos a tirar de nuevo los dados, tiene que obtener la suma de " + suma);
                 for(int i = 1 ; i < 2 ; i++){
                     tiradadado1= (int)(Math.random()*6+1);
                     tiradadado2= (int)(Math.random()*6+1);
