@@ -31,11 +31,12 @@ public class Ejercicio25 {
             if(primo){
                 System.out.print( "#"+numnum+"# ");
             } else{
-                System.out.print(numnum+" ");
-            }
-
-            if(numnum%5==0){
-                System.out.print( "["+numnum+"] ");
+                if(numnum%5==0){
+                    System.out.print( "["+numnum+"] ");
+                }
+                else{
+                    System.out.print(numnum+" ");
+                }
             }
             cont++;
         } while (cont<=100);
