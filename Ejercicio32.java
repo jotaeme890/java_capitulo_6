@@ -24,44 +24,52 @@ public class Ejercicio32 {
         int espacios= 12; //espacios laterales
         int numfigura = 0;
         int sendero = 0;
-        int posicion2 = 0;
+        int posicion = 0;
+        int numobstaculo = 0;
+        String figura = "";
         
         for(int i = 1; i<=altura ; i++){
             int numeroposicion = (int)(Math.random()*3+1);
 
-            switch (numeroposicion) {
+            switch (numeroposicion) { //izq medio o der
+                
                 case 1:
+                //reseteo todos los valores
+                    posicion = 0;
                     numfigura = 0;
-
                     sendero = 0;
                     espacios--;
-                    for(int b = 1; b<=espacios;b++){
+                    for(int b = 1; b<=espacios;b++){ //espacios lat
                         System.out.print(" ");
                     }
-
+                    
                     System.out.print("|");
-
-                    numfigura =(int)(Math.random()*2+1);
+                    numfigura =(int)(Math.random()*2+1); //saber si hay o no figura
                     switch (numfigura) {
                         case 1:
-                        sendero = numfigura;
+                            sendero = (int)(Math.random()*5); //posibilidad de la posicion en el sendero
+                            numobstaculo = (int)(Math.random()*2+1); //saber que figura va a ser
+                            switch (numobstaculo) { //saber que figura coloco en el sendero
+                                case 1:
+                                    figura = "*";
+                                break;
+                                case 2:
+                                    figura = "O";
+                                break;
+
+                            }
                         break;
                         case 2:
-                        numfigura = 0;
+                            numfigura = 0;
                         break;
                     }
 
-                    for(int c = 1; c<=4;c++){
-                        posicion2++;
-                        if(sendero==posicion2){
-                            System.out.print("*");
+                    for(int c = 1; c<=4;c++){ //saber que figura es o espacios 
+                        posicion++;
+                        if(posicion==sendero){
+                            System.out.print(figura);
                         } else{
-                            if(sendero==posicion2){
-                                System.out.print("O");
-                            } 
-                            else{
-                                System.out.print(" ");
-                            }
+                            System.out.print(" ");
                         }
                     }
 
@@ -70,76 +78,88 @@ public class Ejercicio32 {
                 break;
                 
                 case 2:
-                    numfigura = 0;
-                    posicion2 = 0;
-                    sendero = 0;
-                    for(int d = 1; d<=espacios;d++){
-                        System.out.print(" ");
-                    }
-
-                    System.out.print("|");
-                        numfigura =(int)(Math.random()*2+1);
-                        switch (numfigura) {
+                posicion = 0;
+                numfigura = 0;
+                sendero = 0;
+                for(int b = 1; b<=espacios;b++){ //espacios lat
+                    System.out.print(" ");
+                }
+                
+                System.out.print("|");
+                numfigura =(int)(Math.random()*2+1); //saber si hay o no figura
+                switch (numfigura) {
+                    case 1:
+                        sendero = (int)(Math.random()*5);
+                        numobstaculo = (int)(Math.random()*2+1);
+                        switch (numobstaculo) {
                             case 1:
-                                sendero = numfigura;
+                                figura = "*";
                             break;
                             case 2:
-                                numfigura = 0;
+                                figura = "O";
                             break;
-                        }
 
-                        for(int e = 1; e<=4;e++){
-                            posicion2++;
-                            if(sendero==posicion2){
-                                System.out.print("*");
-                            } else{
-                                if(sendero==posicion2){
-                                    System.out.print("O");
-                                } 
-                                else{
-                                    System.out.print(" ");
-                                }
-                            }
                         }
-                    System.out.print("|");
-                    System.out.println("");
+                    break;
+                    case 2:
+                        numfigura = 0;
+                    break;
+                }
+
+                for(int c = 1; c<=4;c++){ //saber que figura es o espacios 
+                    posicion++;
+                    if(posicion==sendero){
+                        System.out.print(figura);
+                    } else{
+                        System.out.print(" ");
+                    }
+                }
+
+                System.out.print("|");
+                System.out.println("");
                 break;
 
                 case 3:
-                    numfigura = 0;
-                    posicion2 = 0;
-                    sendero = 0;
-                    espacios++;
-                    for(int f = 1; f<=espacios;f++){
-                        System.out.print(" ");
-                    }
-
-                    System.out.print("|");
-                        numfigura =(int)(Math.random()*2+1);
-                        switch (numfigura) {
+                posicion = 0;
+                numfigura = 0;
+                sendero = 0;
+                espacios++;
+                for(int b = 1; b<=espacios;b++){ //espacios lat
+                    System.out.print(" ");
+                }
+                
+                System.out.print("|");
+                numfigura =(int)(Math.random()*2+1); //saber si hay o no figura
+                switch (numfigura) {
+                    case 1:
+                        sendero = (int)(Math.random()*5);
+                        numobstaculo = (int)(Math.random()*2+1);
+                        switch (numobstaculo) {
                             case 1:
-                                sendero = numfigura;
+                                figura = "*";
                             break;
                             case 2:
-                                numfigura = 0;
+                                figura = "O";
                             break;
-                        }
 
-                        for(int g = 1; g<=4;g++){
-                            posicion2++;
-                            if(sendero==posicion2){
-                                System.out.print("*");
-                            } else{
-                                if(sendero==posicion2){
-                                    System.out.print("O");
-                                } 
-                                else{
-                                    System.out.print(" ");
-                                }
-                            }
                         }
-                    System.out.print("|");
-                    System.out.println("");
+                    break;
+                    case 2:
+                        numfigura = 0;
+                    break;
+                }
+
+                for(int c = 1; c<=4;c++){ //saber que figura es o espacios 
+                    posicion++;
+                    if(posicion==sendero){
+                        System.out.print(figura);
+                    } else{
+                        System.out.print(" ");
+                    }
+                }
+
+                System.out.print("|");
+                System.out.println("");
                 break;
             }   
         }
