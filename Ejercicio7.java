@@ -23,13 +23,13 @@ public class Ejercicio7 {
                 numeroquiniela = (int)(Math.random()*3+1);
                 switch (numeroquiniela) {
                     case 1:
-                        System.out.print(" 1 |");
+                        System.out.print("1  |");
                     break;
                     case 2:
                         System.out.print(" x |");
                     break;
                     case 3:
-                        System.out.print(" 2 |");
+                        System.out.print("  2|");
                     break;
                 }
             }
