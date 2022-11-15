@@ -58,7 +58,7 @@ public class Ejercicio15 {
             System.out.print(nota + " ");
             
             if(contador == melodias){
-                System.out.print(" || ");
+                System.out.print("|| ");
             } else if(contador%4==0){
                 System.out.print("| ");
             }
