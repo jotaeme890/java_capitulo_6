@@ -28,7 +28,7 @@ public class Ejercicio17 {
             System.out.print("*");
         }
         System.out.println("");
-        for(int i=2;i<=altura-2;i++){
+        for(int i=2;i<=altura-1;i++){
             System.out.print("*");
             for(int j=2;j<=ancho-1;j++){
                 if(posicion==pez){
