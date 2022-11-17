@@ -21,37 +21,28 @@ public class Ejercicio17 {
         System.out.print("Dime el ancho de la pecera (mínimo 4): ");
         int ancho = sc.nextInt();
 
-        int pez = (int)(Math.random()*(altura-1)*(ancho-3));
-        int posicion = 0;
+        int pez = (int)(Math.random()*(ancho-2)*(altura-2))+1;
+        int posicion = 1;
         
-        for(int alt = 1 ; alt <= altura-1 ; alt++){//alto de la pecera
-            for(int anch = 1; anch <= ancho ; anch++){ //ancho de la pecera con los espacios interiores
-                if(anch == 1){ //primera X
-                    System.out.print("X ");
-                } else if (anch==ancho){ //ultima X
-                    System.out.print("X");
-                } 
-                if(posicion == pez){ //si la posicion es igual a la cuenta del random, se imprime el pececito, en este caso al empezar en 0, se va a incrementar hasta que sea el mismo valor para imrpimir o los espacios o el pececito (tiene que hacer alguna de ellas)
-                    System.out.print("~ ");
-                }else{
-                    System.out.print("  ");
+        for(int i = 1; i<=ancho;i++){
+            System.out.print("*");
+        }
+        System.out.println("");
+        for(int i=2;i<=altura-2;i++){
+            System.out.print("*");
+            for(int j=2;j<=ancho-1;j++){
+                if(posicion==pez){
+                    System.out.print("&");
+                } else{
+                    System.out.print(" ");
                 }
                 posicion++;
             }
-            System.out.println("");
-
-            if(alt==altura-1){
-                for(int anch = 1 ; anch<=ancho ; anch++){
-                    
-                    if(anch == 1){
-                        System.out.print("\\  ");
-                    } else if(anch == ancho){
-                        System.out.print(" /");
-                    } else{
-                        System.out.print("X ");
-                    }
-                }
-            }
+            System.out.print("*\n");
+        }
+        
+        for(int i = 1; i<=ancho;i++){
+            System.out.print("*");
         }
         sc.close();
     }
