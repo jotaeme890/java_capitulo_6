@@ -42,7 +42,7 @@ public class Ejercicio29 {
                         case 4:
                         case 5:
                         case 6:
-                        humedadm = "Soleado";
+                            humedadm = "Soleado";
                         break;
                         case 7:
                         case 8:
@@ -73,7 +73,7 @@ public class Ejercicio29 {
                     case 6:
                     case 7:
                     case 8:
-                    humedadm = "Soleado";
+                        humedadm = "Soleado";
                     break;
                     case 9:
                     case 10:
@@ -98,7 +98,7 @@ public class Ejercicio29 {
                     case 2:
                     case 3:
                     case 4:
-                    humedadm = "Soleado";
+                        humedadm = "Soleado";
                     break;
                     case 5:
                     case 6:
@@ -125,7 +125,7 @@ public class Ejercicio29 {
                 switch (humedad) {
                     case 1:
                     case 2:
-                    humedadm = "Soleado";
+                        humedadm = "Soleado";
                     break;
                     case 3:
                     case 4:
